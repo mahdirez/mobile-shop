@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Context } from "../context/Context";
-import "./infoCard.css";
+import { Context } from "../../context/Context";
+import '../infoCard/infoCard.css'
+
+
 
 export default function InfoCard() {
   const [data, setData] = useContext(Context);

@@ -10,7 +10,10 @@ function Main() {
   const [data, setData] = useContext(Context);
   return (
     <div className="main-style">
-      <h1>محصولات فروشگاه</h1>
+      <div className="nav-main">
+        <h1>محصولات فروشگاه</h1>
+        <Link to={'/product'}><button className="btn-nav">بیشتر...</button></Link>
+      </div>
       <Swiper
         slidesPerView={5}
         spaceBetween={30}
@@ -22,7 +25,7 @@ function Main() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay,Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 50 },

@@ -5,7 +5,10 @@ import {
   Footer,
 } from "./components";
 import { Provider } from "./components/context/Context";
-import InfoCard from "./components/infoCard/InfoCard";
+import Cart from "./components/pages/cart/Cart";
+import InfoCard from "./components/pages/infoCard/InfoCard";
+import Products from "./components/pages/products/Products";
+
 import Router from "./Router";
 
 function App() {
@@ -21,6 +24,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Router />} />
           <Route path="/product/:id" element={<InfoCard />} />
+          <Route path="/product" element={<Products/>} />
+          <Route path="/cart" element={<Cart/>} />
         </Routes>
         <footer>
           <Footer/>

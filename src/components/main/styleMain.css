@@ -121,3 +121,18 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
+.nav-main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-nav{
+  background-color: #fff;
+  border: 1px dotted gray;
+  width: 70px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 10px;
+}
