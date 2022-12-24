@@ -1,0 +1,57 @@
+.container-info {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  background-color: #fff;
+}
+.img-info {
+  width: 20%;
+}
+
+.content-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.imgs {
+  width: 100%;
+}
+
+.info-dec {
+  font-size: 25px;
+  color: gray;
+}
+
+.info-con {
+  font-size: 20px;
+  width: 70%;
+}
+
+.info-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info-add {
+  width: 30%;
+  background-color: #2da5ff;
+  color: #eee;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 0;
+  padding: 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.filterImg {
+  cursor: pointer;
+}
+.filterImg img {
+  width: 100px;
+  height: 100px;
+}
