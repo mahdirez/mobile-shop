@@ -3,7 +3,7 @@ import { Context } from "../../context/Context";
 import '../products/product.css'
 
 function Products() {
-  const [data, setData] = useContext(Context);
+  const [data, setData , handleAddCart] = useContext(Context);
   return (
     <div className="container-product">
       {data.map((item) => {
@@ -14,7 +14,7 @@ function Products() {
               <p>{item.title}</p>
               <p>{item.price}تومان</p>
             </div>
-            <button className="addCart">افزودن به سبد خرید</button>
+            <button className="addCart" onClick={()=>handleAddCart(item.id)}>افزودن به سبد خرید</button>
           </div>
         );
       })}

@@ -43,6 +43,10 @@ body {
   min-height: 100vh;
 }
 
+nav{
+  background-color: #0a1930;
+}
+
 section {
   padding: 12rem 0;
   width: 100%;

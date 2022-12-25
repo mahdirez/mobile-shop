@@ -6,7 +6,7 @@ import '../infoCard/infoCard.css'
 
 
 export default function InfoCard() {
-  const [data, setData] = useContext(Context);
+  const [data, setData , handleAddCart] = useContext(Context);
   const [img , setImg] = useState(0)
   const { id } = useParams();
   const detail = data.filter((item) => {
@@ -30,7 +30,7 @@ export default function InfoCard() {
                 })}
               </div>
               <p className='info-price'>قیمت :{item.price}</p>
-              <button className="info-add" >افزودن به سبد خرید</button>
+              <button className="info-add" onClick={()=>handleAddCart(item.id)}>افزودن به سبد خرید</button>
             </div>
           </div>
         );

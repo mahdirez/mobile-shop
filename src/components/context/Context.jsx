@@ -174,8 +174,37 @@ export function Provider(props) {
       count: 1,
     },
   ]);
+  const [cart , setCart] = useState([])
+  const handleAddCart = (id)=>{
+      const product = data.filter((item)=>{
+        return item.id === id;
+      })
+      setCart([...cart , ...product])
+  }
+  console.log(cart)
+
+  const increase = (id)=>{
+      const plus = cart.forEach((item)=>{
+         if(item.id === id){
+          return item.count += 1;
+         }
+         setCart([...cart])
+      })
+      
+      
+  }
+  const decrease = (id)=>{
+    const plus = cart.forEach((item)=>{
+       if(item.id === id){
+        return item.count === 1 ? item.count === 1 : item.count -= 1;
+       }
+       setCart([...cart])
+    })
+    
+    
+}
   return (
-    <Context.Provider value={[data, setData]}>
+    <Context.Provider value={[data, setData , handleAddCart , cart , increase , decrease , setCart]}>
       {props.children}
     </Context.Provider>
   );

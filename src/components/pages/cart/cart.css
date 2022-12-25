@@ -1,0 +1,68 @@
+.container-cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.bg-cart {
+  background-color: #fff;
+}
+
+.content-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-cart > p {
+  font-size: 20px;
+}
+
+.num-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.num-cart > button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.num-cart > span {
+  font-size: 20px;
+}
+
+.container-pay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.total-cart {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.pay-cart {
+  background-color: #2da5ff;
+  color: #eee;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 30px;
+}

@@ -1,9 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {
-  Navbar,
-  Header,
-  Footer,
-} from "./components";
+import { Navbar, Header, Footer } from "./components";
 import { Provider } from "./components/context/Context";
 import Cart from "./components/pages/cart/Cart";
 import InfoCard from "./components/pages/infoCard/InfoCard";
@@ -16,19 +12,18 @@ function App() {
     <Provider>
       <BrowserRouter>
         <main>
-          <header className="header-bg">
+          <nav>
             <Navbar />
-            <Header />
-          </header>
+          </nav>
         </main>
         <Routes>
           <Route path="/" element={<Router />} />
           <Route path="/product/:id" element={<InfoCard />} />
-          <Route path="/product" element={<Products/>} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </BrowserRouter>
     </Provider>
