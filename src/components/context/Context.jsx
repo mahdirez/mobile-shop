@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export const Context = createContext();
 export function Provider(props) {
@@ -27,10 +28,9 @@ export function Provider(props) {
         "https://dkstatics-public.digikala.com/digikala-products/ebb4f23ee5eb18868841fdbbe9bc29cf21cfa5b2_1656432952.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "https://dkstatics-public.digikala.com/digikala-products/9af42579a43b8a4d2b17c33fe5d542387ba42b5f_1656421008.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       ],
-      description:
-        "گوشی موبایل اپل مدل iPhone 7 Plus ظرفیت 256 گیگابایت",
+      description: "گوشی موبایل اپل مدل iPhone 7 Plus ظرفیت 256 گیگابایت",
       content:
-       "سومین نسل از فبلت‌های اپل همراه با سخت‌افزاری که جلوی هیچ‌ بازی یا برنامه‌ای کم نمی‌آورد، زوم اپتیکال که نتیجه‌ی دوربین‌های دوتایی است، نمایشگری مناسب برای بازی و مطالعه و همچنین باتری‌ای که اپل ادعا می‌کند، بهترین بازده را در میان تمام آیفون‌هایش دارد؛ مثل همیشه و با سروصدای زیادی روانه‌ی بازار شد. گوشی «آیفون 7پلاس» (Apple iPhone 7 Plus) بزرگ‌ترین و قدرتمند‌ترین آیفونی است که اپل تاکنون ساخته",
+        "سومین نسل از فبلت‌های اپل همراه با سخت‌افزاری که جلوی هیچ‌ بازی یا برنامه‌ای کم نمی‌آورد، زوم اپتیکال که نتیجه‌ی دوربین‌های دوتایی است، نمایشگری مناسب برای بازی و مطالعه و همچنین باتری‌ای که اپل ادعا می‌کند، بهترین بازده را در میان تمام آیفون‌هایش دارد؛ مثل همیشه و با سروصدای زیادی روانه‌ی بازار شد. گوشی «آیفون 7پلاس» (Apple iPhone 7 Plus) بزرگ‌ترین و قدرتمند‌ترین آیفونی است که اپل تاکنون ساخته",
       colors: ["red", "blue", "teal"],
       price: 150000,
       count: 1,
@@ -45,7 +45,7 @@ export function Provider(props) {
         "https://dkstatics-public.digikala.com/digikala-products/ce3ef78b346dc6fb502fefd3406f504c66db6cbf_1642413293.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
       ],
       description:
-       "گوشی موبایل اپل مدل iPhone 12 A2404 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
+        "گوشی موبایل اپل مدل iPhone 12 A2404 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
       content:
         "گوشی موبایل iPhone 12 A2404 CH پرچم‌دار جدید شرکت اپل است که با چند ویژگی جدید و دوربین دوگانه روانه بازار شده است. اپل برای ویژگی‌ها و طراحی کلی این گوشی از همان فرمول چند سال اخیرش استفاده کرده است. نمایشگر آیفون 12 به پنل Super Retina مجهز ‌شده است تا تصاویر بسیار مطلوبی را به کاربر عرضه کند.",
       colors: ["red", "blue", "teal"],
@@ -62,12 +62,12 @@ export function Provider(props) {
         "https://dkstatics-public.digikala.com/digikala-products/4e8091634d7729c7de37c4036efa269142287145_1652102610.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
         "https://dkstatics-public.digikala.com/digikala-products/df66ac303ff2c0a00519de91246c2b66929cee83_1652102596.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
         "https://dkstatics-public.digikala.com/digikala-products/d6de3681607bc8d1e2f67b19b80c3cc8a8f028b4_1652263689.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-        "https://dkstatics-public.digikala.com/digikala-products/4cc28ae8b99a91b50d2041353c3286888b2d4e32_1652102618.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+        "https://dkstatics-public.digikala.com/digikala-products/4cc28ae8b99a91b50d2041353c3286888b2d4e32_1652102618.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
       ],
       description:
-       "گوشی موبایل سامسونگ مدل Galaxy S22 Ultra 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت نسخه اسنپدراگون",
+        "گوشی موبایل سامسونگ مدل Galaxy S22 Ultra 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت نسخه اسنپدراگون",
       content:
-       "سامسونگ Galaxy S22 Ultra 5G با بهره بردن از مشخصات فنی مناسب و فوق قدرتمند به‌عنوان پرچمدار شرکت سامسونگ در تاریخ 9 فوریه سال 2022 معرفی شد. در همان نگاه اول طراحی کمی مشابه با پرچمداران سری نوت این شرکت را شاهد هستیم که البته زیبایی بصری بسیار جذابی را هم با خود به‌همراه داشته است. در نمای رو‌به‌رویی سامسونگ Galaxy S22 Ultra 5G به صفحه‌نمایش با ابعاد 6.8 اینچ و رزولوشن 1440×3088 پیکسل از نوع Dynamic AMOLED 2X مجهز شده است.",
+        "سامسونگ Galaxy S22 Ultra 5G با بهره بردن از مشخصات فنی مناسب و فوق قدرتمند به‌عنوان پرچمدار شرکت سامسونگ در تاریخ 9 فوریه سال 2022 معرفی شد. در همان نگاه اول طراحی کمی مشابه با پرچمداران سری نوت این شرکت را شاهد هستیم که البته زیبایی بصری بسیار جذابی را هم با خود به‌همراه داشته است. در نمای رو‌به‌رویی سامسونگ Galaxy S22 Ultra 5G به صفحه‌نمایش با ابعاد 6.8 اینچ و رزولوشن 1440×3088 پیکسل از نوع Dynamic AMOLED 2X مجهز شده است.",
       colors: ["red", "blue", "teal"],
       price: 80000,
       count: 1,
@@ -99,7 +99,7 @@ export function Provider(props) {
       description:
         "گوشی موبایل اپل مدل SE 2020 LL/A تک سیم کارت ظرفیت 256 گیگابایت و 3 گیگابایت رم",
       content:
-       "حروف بزرگ SE در کوچیک‌ترین عضو خانواده اپل نشان از خاص بودن این نسخه (Special Edition) دارد. گوشی 2020 iPhone SE برادر کوچکتر همان iPhone SE است که با چهار سال اختلاف سن روانه بازار شده است تا این بار آن دسته از طرفداران اپل که نمی‌خواهند بیش از اندازه هزینه کنند را به خود جلب کند. آیفون اس ای 2020 در واقع ارزان‌ترین آیفونی است که تا به حال به بازار عرضه شده است.",
+        "حروف بزرگ SE در کوچیک‌ترین عضو خانواده اپل نشان از خاص بودن این نسخه (Special Edition) دارد. گوشی 2020 iPhone SE برادر کوچکتر همان iPhone SE است که با چهار سال اختلاف سن روانه بازار شده است تا این بار آن دسته از طرفداران اپل که نمی‌خواهند بیش از اندازه هزینه کنند را به خود جلب کند. آیفون اس ای 2020 در واقع ارزان‌ترین آیفونی است که تا به حال به بازار عرضه شده است.",
       colors: ["red", "blue", "teal"],
       price: 80000,
       count: 1,
@@ -115,7 +115,7 @@ export function Provider(props) {
         "https://dkstatics-public.digikala.com/digikala-products/195bd99289c288cbb927fe9b9d659275eefeae71_1631648798.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
         "https://dkstatics-public.digikala.com/digikala-products/9582480838e6440356f8469461aa51a7fa84cba2_1631648780.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
         "https://dkstatics-public.digikala.com/digikala-products/e58f5d3bc9d227010b8bf2a6b909689ca6e83119_1631690693.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-        "https://dkstatics-public.digikala.com/digikala-products/41c21ef6ec1beedf40b7d2caaf52b9c731a6ea1a_1631648797.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+        "https://dkstatics-public.digikala.com/digikala-products/41c21ef6ec1beedf40b7d2caaf52b9c731a6ea1a_1631648797.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
       ],
       description:
         "گوشی موبایل اپل مدل iPhone 13 Pro A2639 دو سیم‌ کارت ظرفیت 512 گیگابایت و 6 گیگابایت رم",
@@ -152,7 +152,7 @@ export function Provider(props) {
       description:
         "گوشی موبایل سامسونگ مدل Galaxy A13 SM-A135F/DS دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
       content:
-      "سری A گوشی‌های هوشمند میان‌رده سامسونگ توانستند با بهره بردن از مشخصات فنی مناسب و البته قیمتی مقرون به‌صرفه، کاربران بسیاری را به سمت خودشان جلب کنند. یکی از این گوشی‌های میان‌رده با‌کیفیت و زیبا، سامسونگ Galaxy A13 SM-A135F/DS است که باید گفت بهره بردن از مشخصات فنی مناسب، سبب شده تا عملکرد بسیار خوب و کاملا قابل قبولی را در جایگاه یک گوشی هوشمند میان‌رده به شما ارائه کند",
+        "سری A گوشی‌های هوشمند میان‌رده سامسونگ توانستند با بهره بردن از مشخصات فنی مناسب و البته قیمتی مقرون به‌صرفه، کاربران بسیاری را به سمت خودشان جلب کنند. یکی از این گوشی‌های میان‌رده با‌کیفیت و زیبا، سامسونگ Galaxy A13 SM-A135F/DS است که باید گفت بهره بردن از مشخصات فنی مناسب، سبب شده تا عملکرد بسیار خوب و کاملا قابل قبولی را در جایگاه یک گوشی هوشمند میان‌رده به شما ارائه کند",
       colors: ["red", "blue", "teal"],
       price: 80000,
       count: 1,
@@ -168,43 +168,68 @@ export function Provider(props) {
       description:
         "گوشی موبایل سامسونگ مدل Galaxy Z Fold4 دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
       content:
-       "سامسونگ Galaxy Z Fold4 یکی از گوشی‌های هوشمند انعطاف پذیر جدید این شرکت است که مشخصات فنی قدرتمند و قابلیت‌های جذابی را با خود به‌همراه دارد. باید قبول کرد که سامسونگ در عرصه گوشی‌های هوشمند انعطاف پذیر، پیشگام بوده است و توانسته عملکرد بسیار خوبی را به‌نمایش بگذارد. طراحی جذاب این گوشی چندان تفاوتی با نسل قبلی، یعنی Galaxy Z Fold3 چندان تفاوتی ندارد. ",
+        "سامسونگ Galaxy Z Fold4 یکی از گوشی‌های هوشمند انعطاف پذیر جدید این شرکت است که مشخصات فنی قدرتمند و قابلیت‌های جذابی را با خود به‌همراه دارد. باید قبول کرد که سامسونگ در عرصه گوشی‌های هوشمند انعطاف پذیر، پیشگام بوده است و توانسته عملکرد بسیار خوبی را به‌نمایش بگذارد. طراحی جذاب این گوشی چندان تفاوتی با نسل قبلی، یعنی Galaxy Z Fold3 چندان تفاوتی ندارد. ",
       colors: ["red", "blue", "teal"],
       price: 80000,
       count: 1,
     },
   ]);
-  const [cart , setCart] = useState([])
-  const handleAddCart = (id)=>{
-      const product = data.filter((item)=>{
+  const [cart, setCart] = useState([]);
+  const handleAddCart = (id) => {
+    const checkItem = cart.every((item) => {
+      return item.id !== id;
+    });
+    console.log(checkItem);
+    if (checkItem) {
+      toast.success(" محصول با موفقیت به سبد خرید اضافه شد");
+      const product = data.filter((item) => {
         return item.id === id;
-      })
-      setCart([...cart , ...product])
-  }
-  console.log(cart)
+      });
+      setCart([...cart, ...product]);
+    } else {
+      toast.error("این محصول قبلا اضافه شده!!!");
+    }
+  };
+  console.log(cart);
 
-  const increase = (id)=>{
-      const plus = cart.forEach((item)=>{
-         if(item.id === id){
-          return item.count += 1;
-         }
-         setCart([...cart])
+  const increase = (id) => {
+    const plus = cart.forEach((item) => {
+      if (item.id === id) {
+        return (item.count += 1);
+      }
+      setCart([...cart]);
+    });
+  };
+  const decrease = (id) => {
+    const plus = cart.forEach((item) => {
+      if (item.id === id) {
+        return item.count === 1 ? item.count === 1 : (item.count -= 1);
+      }
+      setCart([...cart]);
+    });
+  };
+
+  const handleRemoveItem = (id) => {
+    setCart(
+      cart.filter((item) => {
+        return item.id !== id;
       })
-      
-      
-  }
-  const decrease = (id)=>{
-    const plus = cart.forEach((item)=>{
-       if(item.id === id){
-        return item.count === 1 ? item.count === 1 : item.count -= 1;
-       }
-       setCart([...cart])
-    })
-    
-    
-}
+    );
+    toast.error("محصول حذف شد!");
+  };
   return (
-    <Context.Provider value={[data, setData , handleAddCart , cart , increase , decrease , setCart]}>
+    <Context.Provider
+      value={[
+        data,
+        setData,
+        handleAddCart,
+        cart,
+        increase,
+        decrease,
+        setCart,
+        handleRemoveItem,
+      ]}
+    >
       {props.children}
     </Context.Provider>
   );

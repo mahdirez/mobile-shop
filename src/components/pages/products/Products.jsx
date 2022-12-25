@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import '../products/product.css'
 
@@ -11,7 +12,7 @@ function Products() {
           <div className="cart">
             <img src={item.images[0]} className="img-product"/>
             <div className="content">
-              <p>{item.title}</p>
+              <Link to={`/product/${item.id}`}><p className="p-ti">{item.title}</p></Link>
               <p>{item.price}تومان</p>
             </div>
             <button className="addCart" onClick={()=>handleAddCart(item.id)}>افزودن به سبد خرید</button>

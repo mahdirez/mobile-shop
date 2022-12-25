@@ -18,7 +18,7 @@ export default function InfoCard() {
         return (
           <div className="container-info">
             <div className="img-info">
-              <img src={item.images[img]}  className='imgs'/>
+              <img src={item.images[img]} className='image-info'/>
             </div>
             <div className="content-info">
               <h1>{item.title}</h1>
@@ -29,7 +29,7 @@ export default function InfoCard() {
                    return <button className="filterImg" onClick={()=>setImg(index)}><img src={img}  /></button>
                 })}
               </div>
-              <p className='info-price'>قیمت :{item.price}</p>
+              <p className='info-price'>قیمت :{item.price}تومان</p>
               <button className="info-add" onClick={()=>handleAddCart(item.id)}>افزودن به سبد خرید</button>
             </div>
           </div>
