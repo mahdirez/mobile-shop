@@ -14,7 +14,7 @@ function Question({title, answer}) {
               <div className="question-title">
                 <h2>{title}</h2>
                 <button onClick={handleClick}>
-                  <AiOutlinePlus color='#1f93ff' />
+                 {showAnswer ? <AiOutlineMinus color='#1f93ff'/>:  <AiOutlinePlus color='#1f93ff' />}
                 </button>
               </div>
               <div className="question-answer">

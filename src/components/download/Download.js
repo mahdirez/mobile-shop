@@ -1,19 +1,16 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from "react";
 import { FaApple, FaWindows } from "react-icons/fa";
 import { GrAndroid } from "react-icons/gr";
-import './Download.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "./Download.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Download() {
-
   useEffect(() => {
     AOS.init({
-      duration: 1000
+      duration: 1000,
     });
-  }, [])
-
-
+  }, []);
 
   return (
     <section id="download">
@@ -25,15 +22,21 @@ function Download() {
         <div className="download-apps">
           <div className="download-app">
             <FaApple />
-            <p>آیفون</p>
+            <p>
+              <a href="https://www.apple.com/app-store/">ای او اس</a>
+            </p>
           </div>
           <div className="download-app">
             <FaWindows />
-            <p>ویندوز</p>
+            <p>
+              <a href="https://www.microsoft.com/en-ww/store/">ویندوز</a>
+            </p>
           </div>
           <div className="download-app">
             <GrAndroid />
-            <p>اندروید</p>
+            <p>
+              <a href="https://play.google.com/store/games?pli=1">اندروید</a>
+            </p>
           </div>
         </div>
       </div>

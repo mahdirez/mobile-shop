@@ -20,7 +20,6 @@ function Faq() {
         <div className="faq-title"  data-aos="fade-up">
           <MdOutlineLibraryBooks color="orangered" size={30} />
           <h2>سوالات متداول</h2>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
         </div>
 
         <div className="questions">

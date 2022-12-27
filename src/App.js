@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar, Header, Footer } from "./components";
+import { Navbar, Footer } from "./components";
 import { Provider } from "./components/context/Context";
 import Cart from "./components/pages/cart/Cart";
 import InfoCard from "./components/pages/infoCard/InfoCard";

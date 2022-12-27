@@ -22,7 +22,7 @@ const Header = () => {
             <span>بهترین قیمت</span>
             <span>انواع برند ها</span>
           </h1>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+          <p></p>
           <div className="header-btn">
             <a href="#" className="btn btn-dark">بیاین شروع کنیم</a>
             <a href="#" className="btn btn-light">چجوری کار میکنیم</a>
