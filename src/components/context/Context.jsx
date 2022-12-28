@@ -24,20 +24,21 @@ export function Provider(props) {
   console.log(cart);
 
   const increase = (id) => {
-    const plus = cart.forEach((item) => {
+    cart.forEach((item) => {
       if (item.id === id) {
-        return (item.count += 1);
+        item.count += 1;
       }
-      setCart([...cart]);
     });
+    setCart([...cart]);
   };
   const decrease = (id) => {
-    const plus = cart.forEach((item) => {
+    cart.forEach((item) => {
       if (item.id === id) {
-        return item.count === 1 ? item.count === 1 : (item.count -= 1);
+        item.count === 1 ? item.count = 1 : item.count -= 1;
       }
-      setCart([...cart]);
+      
     });
+    setCart([...cart]);
   };
 
   const handleRemoveItem = (id) => {
@@ -57,14 +58,14 @@ export function Provider(props) {
   const [filter, setFilter] = useState(dataApp);
 
   const filterItem = (categories) => {
-    if(categories === "همه"){
-    return  setFilter(dataApp)
+    if (categories === "همه") {
+      return setFilter(dataApp);
     }
     const loop = dataApp.filter((item) => item.categories === categories);
-    setFilter(loop)
+    setFilter(loop);
   };
 
-  console.log(filter)
+  console.log(filter);
   return (
     <Context.Provider
       value={[
@@ -79,7 +80,7 @@ export function Provider(props) {
         allCategories,
         filter,
         setFilter,
-        filterItem
+        filterItem,
       ]}
     >
       {props.children}
