@@ -18,7 +18,7 @@ function Products() {
     filter,
     setFilter,
   ] = useContext(Context);
-  console.log("first");
+  
   return (
     <>
       <div className="title">

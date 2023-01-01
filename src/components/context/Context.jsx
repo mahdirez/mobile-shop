@@ -10,7 +10,7 @@ export function Provider(props) {
     const checkItem = cart.every((item) => {
       return item.id !== id;
     });
-    console.log(checkItem);
+  
     if (checkItem) {
       toast.success(" محصول با موفقیت به سبد خرید اضافه شد");
       const product = data.filter((item) => {
@@ -21,7 +21,7 @@ export function Provider(props) {
       toast.error("این محصول قبلا اضافه شده!!!");
     }
   };
-  console.log(cart);
+
 
   const increase = (id) => {
     cart.forEach((item) => {
@@ -34,9 +34,8 @@ export function Provider(props) {
   const decrease = (id) => {
     cart.forEach((item) => {
       if (item.id === id) {
-        item.count === 1 ? item.count = 1 : item.count -= 1;
+        item.count === 1 ? (item.count = 1) : (item.count -= 1);
       }
-      
     });
     setCart([...cart]);
   };
@@ -47,6 +46,13 @@ export function Provider(props) {
         return item.id !== id;
       })
     );
+    cart.forEach((item)=>{
+      if(item.id === id){
+        console.log(item.count)
+       return item.count = 1;
+     
+      }
+    })
     toast.error("محصول حذف شد!");
   };
 
@@ -65,7 +71,7 @@ export function Provider(props) {
     setFilter(loop);
   };
 
-  console.log(filter);
+ 
   return (
     <Context.Provider
       value={[

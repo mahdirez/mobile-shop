@@ -38,21 +38,21 @@ const Footer = () => {
           <h4>راه های ارتباطی</h4>
           <div className="footer-contact">
             <p>
-              <FaMapMarkerAlt /> &nbsp; ادرس : تهران دست راست
+              <FaMapMarkerAlt /> &nbsp; ادرس : تهران  تهرانپارس اتوبان باقری 196غربی اردیبهشت کوچه شهید عسگری 214
             </p>
             <p>
-              <FaPhoneAlt /> &nbsp; تلفن : 0989111111111{" "}
-            </p>
-            <p>
-              {" "}
-              <FaFax /> &nbsp; فکس : 0989111111111
+              <FaPhoneAlt /> &nbsp; تلفن : 09109560790{" "}
             </p>
             <p>
               {" "}
-              <FaEnvelope /> &nbsp; ایمیل : Example@gmail.com
+              <FaFax /> &nbsp; فکس : 09109560790
             </p>
             <p>
-              <FaGlobe /> &nbsp; وبسایت : www.example.com{" "}
+              {" "}
+              <FaEnvelope /> &nbsp; ایمیل : amini@gmail.com
+            </p>
+            <p>
+              <FaGlobe /> &nbsp; وبسایت : www.amini.com{" "}
             </p>
           </div>
         </div>
